@@ -1,0 +1,67 @@
+.Product-Card {
+    max-width: 300px;
+    overflow: hidden;
+    height: 500px;
+    padding: 15px;
+    box-shadow: 0 0 15px purple;
+    margin: 20px;
+    position: relative;
+}
+
+.Product-Card img {
+    width: 100%;
+    height: 250px;
+    display: block;
+    object-fit: cover;
+}
+
+.Product-Box h2 {
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    text-transform: capitalize;
+    cursor: pointer;
+    color: purple;
+}
+
+.Product-Card span {
+    color: crimson;
+}
+
+.Product-Box p {
+    width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    height: 70px;
+    overflow: hidden;
+    color: black;
+}
+
+.Row-Buttons {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Row-Buttons a {
+    width: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 6px;
+}
+
+#Buy-Button {
+    background: #555;
+    margin-right: 5px;
+}
+
+#View-Button {
+    background: teal;
+    margin-left: 5px;
+}

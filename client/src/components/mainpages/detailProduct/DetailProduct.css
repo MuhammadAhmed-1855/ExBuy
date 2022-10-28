@@ -1,0 +1,66 @@
+.Detail {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+    font-size: 150%;
+}
+
+.Detail img {
+    max-width: 400px;
+    width: 100%;
+    margin: 20px;
+    height: 450px;
+    object-fit: contain;
+    display: block;
+}
+
+.Detail-Box {
+    max-width: 500px;
+    width: 100%;
+    margin: 20px;
+    margin-right: 60px;
+    
+}
+
+.Detail-Box .Row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Detail-Box h2 {
+    text-transform: uppercase;
+    color: purple;
+    letter-spacing: 2px;
+    font-weight: 2rem;
+}
+
+.Detail-Box span {
+    color: crimson;
+}
+
+.Detail-Box p {
+    line-height: 1.5;
+    margin: 10px 0;
+    opacity: 0.8;
+}
+
+.Detail-Box .Cart {
+    background: purple;
+    color: white;
+    margin-top: 10px;
+    padding: 10px 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.Products {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-items: center;
+    margin: 20px 0;
+}

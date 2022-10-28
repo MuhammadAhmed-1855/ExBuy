@@ -1,0 +1,24 @@
+.Load-Page {
+    background: white;
+    overflow: hidden;
+}
+
+.Loader {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+}
+
+.Loader div {
+    width: calc(100% - 15px);
+    height: calc(100% - 15px);
+    border-radius: 50%;
+    border: 2px solid purple;
+    border-top: 2px solid crimson;
+    animation: spin 10s linear infinite alternate-reverse;
+}
+
+@keyframes rotate {
+    50%{transform: rotate(80deg)};
+    100%{transform: rotate(360deg)};
+}
