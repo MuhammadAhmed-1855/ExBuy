@@ -1,10 +1,9 @@
 const express = require('express');
-const dotenv = require('dotenv').config();
+require('dotenv').config();
 const mongoose = require('mongoose');
 const cors = require('cors');
 const fileUpload = require('express-fileupload');
 const cookieParser = require('cookie-parser');
-
 
 const app = express();
 app.use(express.json());
@@ -20,6 +19,7 @@ app.use('/api', require('./routes/upload'));
 app.use('/api', require('./routes/productRouter'));
 
 const URI = process.env.MONGODB_URI;
+
 mongoose.connect(URI, {
     useNewUrlParser : true,
     useUnifiedTopology : true,
