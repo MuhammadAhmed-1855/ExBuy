@@ -3,9 +3,7 @@ const Users = require('../models/buyerModel')
 const authAdmin = async (req, res, next) =>{
     try {
         // Get user information by id
-        const user = await Users.findOne({
-            _id: req.user.id
-        })
+        const user = await Users.findOne({email: req.header("Email")})
         if(user.role === 0)
             return res.status(400).json({msg: "Admin resources access denied"})
 
