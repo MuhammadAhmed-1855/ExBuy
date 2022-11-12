@@ -1,12 +1,23 @@
-import React/*, {useState , useContext}*/ from 'react';
-//import {GlobalState} from '../../GlobalState'; 
+import React, {useState , useContext} from 'react';
+import {GlobalState} from '../../GlobalState'; 
 //import Menu from './icons/menu.svg';
 import Close from './icons/close.svg';
 import Cart from './icons/cart.svg';
 import {Link} from 'react-router-dom';
 
 function Header() {
-    // const value = useContext(GlobalState);
+    const state = useContext(GlobalState);
+    const [isLogged, setIsLogged] = state.userAPI.isLogged;
+    const [isAdmin, setIsAdmin] = state.userAPI.isAdmin;
+
+    const adminRouter = () => {
+        return (
+            <>
+                <li><Link to="/create"></Link></li>
+            </>
+        )
+    };
+
     return(
         <header>
             {/* <div className="Menu">

@@ -17,6 +17,7 @@ app.use(fileUpload({
 app.use('/buyer', require('./routes/buyerRouter'));
 app.use('/api', require('./routes/upload'));
 app.use('/api', require('./routes/productRouter'));
+app.use('/api', require('./routes/categoryRouter'))
 
 const URI = process.env.MONGODB_URI;
 
