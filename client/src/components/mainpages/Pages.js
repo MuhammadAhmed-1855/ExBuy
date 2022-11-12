@@ -12,7 +12,7 @@ function Pages() {
         <Routes>
             <Route path="/" exact element={<Products />} />
             <Route path="/detail/:id" exact element={<DetailProduct />} />
-            <Route path="/register" exact element={<Register />} />
+            <Route path="/buyerregister" exact element={<Register />} />
             <Route path="/buyerlogin" exact element={<Login />} />
             <Route path="/cart" exact element={<Cart />} />
 

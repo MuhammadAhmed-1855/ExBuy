@@ -18,6 +18,7 @@ code {
   margin-left: 100px;
   margin-right: 100px;
   padding: 0 20px;
+  padding-bottom: 100px;
   box-shadow: 0 0 35px purple;
 }
 
@@ -41,3 +42,5 @@ button {
 @import url("./components/mainpages/products/Products.css");
 
 @import url("./components/mainpages/detailProduct/DetailProduct.css");
+
+@import url("./components/mainpages/auth/Login.css");

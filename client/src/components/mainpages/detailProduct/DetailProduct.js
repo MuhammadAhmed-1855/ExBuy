@@ -23,7 +23,7 @@ function DetailProduct() {
   return (
     <>
         <div className='Detail'>
-            <img src={detailProduct.images.url} />
+            <img src={detailProduct.images.url} alt='' />
             <div className='Detail-Box'>
                 <div className='Row'>
                     <h2>{detailProduct.title}</h2>

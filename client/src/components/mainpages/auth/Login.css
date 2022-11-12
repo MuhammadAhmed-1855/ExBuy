@@ -1,0 +1,43 @@
+.Login-Page {
+    max-width: 500px;
+    border: 2px solid purple;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 50px auto;
+}
+
+.Login-Page h2 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: lightslategrey;
+}
+
+.Login-Page form input, .Login-Page form button {
+    width: 95%;
+    height: 40px;
+    margin: 10px 0;
+    padding: 0 5px;
+    outline: blueviolet;
+    border: 1px solid blueviolet;
+}
+
+.Login-Page form .Row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Login-Page form button {
+    width: 150px;
+    background: purple;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.Login-Page form a {
+    color: purple;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    padding-right: 10px;
+}

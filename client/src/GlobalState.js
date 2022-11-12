@@ -1,10 +1,22 @@
-import React, {createContext, useState} from 'react';
+import React, {createContext, useState, useEffect} from 'react';
 import ProductsAPI from './api/ProductsAPI';
+import axios from 'axios';
 
 export const GlobalState = createContext();
 
 export const DataProvider = ({children}) => {
     const [token, setToken] = useState(false);
+
+    const refresh_Token = async () => {
+        const token = await axios.get('/buyer/refresh_token')
+
+        setToken(token.data.accessToken);
+    };
+
+    useEffect(() => {
+        const firstLogin = localStorage.getItem('FirstLogin');
+        if(firstLogin) refresh_Token()
+    },[]);
 
     ProductsAPI()
 
