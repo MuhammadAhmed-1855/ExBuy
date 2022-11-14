@@ -1,31 +1,41 @@
-import React, {useState , useContext} from 'react';
+import React, {/*useState , */useContext} from 'react';
 import {GlobalState} from '../../GlobalState'; 
-//import Menu from './icons/menu.svg';
+import Menu from './icons/menu.svg';
 import Close from './icons/close.svg';
 import Cart from './icons/cart.svg';
 import {Link} from 'react-router-dom';
 
 function Header() {
     const state = useContext(GlobalState);
-    const [isLogged, setIsLogged] = state.userAPI.isLogged;
-    const [isAdmin, setIsAdmin] = state.userAPI.isAdmin;
+    // const [isLogged, setIsLogged] = state.userAPI.isLogged;
+    const [isAdmin/*, setIsAdmin*/] = state.userAPI.isAdmin;
 
-    const adminRouter = () => {
-        return (
-            <>
-                <li><Link to="/create"></Link></li>
-            </>
-        )
-    };
+    // const adminRouter = () => {
+    //     return (
+    //         <>
+    //             <li><Link to="/create_product">Create Product</Link></li>
+    //             <li><Link to="/category"></Link>Categories</li>
+    //         </>
+    //     )
+    // };
+
+    // const loggedRouter = () => {
+    //     return (
+    //         <>
+    //             <li><Link to="/history">History</Link></li>
+    //             <li><Link to="/"></Link>Logout</li>
+    //         </>
+    //     )
+    // };
 
     return(
         <header>
-            {/* <div className="Menu">
+            <div className="Menu">
                 <img src={Menu} alt="" width="30" />
-            </div> */}
+            </div>
 
             <div className="Logo">
-                <Link to='/'>ExBuy</Link>
+                <Link to='/'>{isAdmin ? 'Admin': 'ExBuy'}</Link>
             </div>
 
             <ul>
