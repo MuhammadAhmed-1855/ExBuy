@@ -16,8 +16,6 @@ jobs:
     defaults:
       run:
         working-directory: ./client
-        run: git config --global user.email "i201855@nu.edu.pk"
-        run: git config --global user.name "MuhammadAhmed-1855"
     
     strategy:
       matrix:
