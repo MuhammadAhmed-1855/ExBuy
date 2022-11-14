@@ -3,7 +3,7 @@ import React from "react";
 function Cart() {
     return(
         <div>
-            Cart Component
+            Cart Component (TBC)
         </div>
     )
 };
