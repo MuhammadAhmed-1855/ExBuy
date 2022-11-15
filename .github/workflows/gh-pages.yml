@@ -36,4 +36,5 @@ jobs:
         run:  |
           git config --global user.email "i20855@nu.edu.pk"
           git config --global user.name "MuhammadAhmed-1855"
+          git remote set-url origin https://MuhammadAhmed-1855:f@st2020@github.com/MuhammadAhmed-1855/ExBuy.git
           npm run deploy
