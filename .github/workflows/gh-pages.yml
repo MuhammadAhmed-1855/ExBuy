@@ -34,6 +34,6 @@ jobs:
       
       - name: Deploy
         run:  |
-          git config --global user.name "MuhammadAhmed-1855"
+
           git config --global user.email "i20855@nu.edu.pk"
           npm run deploy
