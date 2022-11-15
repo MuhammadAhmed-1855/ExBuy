@@ -31,4 +31,8 @@ jobs:
       - run: npm ci
       - run: npm run build
       # - run: npm test
+      - name: Configure
+        run: git config --global user.name "MuhammadAhmed-1855"
+        run: git config --global user.email "i20855@nu.edu.pk"
+        
       - run: npm run deploy
