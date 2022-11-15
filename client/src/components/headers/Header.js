@@ -34,7 +34,7 @@ function Header() {
                 <img src={Menu} alt="" width="30" />
             </div>
 
-            <div className="Logo">
+            <div data-testid="LogoChecker" className="Logo">
                 <Link to='/'>{isAdmin ? 'Admin': 'ExBuy'}</Link>
             </div>
 
