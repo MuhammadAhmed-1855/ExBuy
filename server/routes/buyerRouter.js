@@ -12,4 +12,6 @@ router.get('/refresh_token', buyerController.refreshToken);
 
 router.get('/infor', auth, buyerController.getBuyer);
 
+router.patch('/addcart', auth, buyerController.addCart);
+
 module.exports = router;

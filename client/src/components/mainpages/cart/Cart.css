@@ -1,0 +1,36 @@
+.Detail hr{
+    color: blueviolet;
+    border-top: dotted 10px;
+    width: 10%;
+    margin: auto;
+}
+.Amount strong{
+    color: crimson;
+    padding: 0 20px;
+}
+.Amount button{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #777;
+}
+.Delete{
+    position: absolute;
+    right: 200px;
+    color: crimson;
+    font-weight: 900;
+    cursor: pointer;
+}
+.Total{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: x-large;
+}
+.Total h3{
+    color: crimson;
+}
+.Total a{
+    color: darkorchid;
+}

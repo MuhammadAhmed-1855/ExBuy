@@ -94,6 +94,7 @@ const buyerController = {
             if(!buyer) { return res.status(400).json({msg: "Buyer does not exist"}); }
 
             res.json({buyer});
+            console.log({buyer});
         }
         catch(err){
             return res.status(500).json({msg: err.message});
@@ -101,10 +102,10 @@ const buyerController = {
     },
     addCart: async (req, res) =>{
         try {
-            const buyer = await Buyers.findById(req.user.id)
+            const buyer = await Buyers.findById(req.buyer.id)
             if(!buyer) return res.status(400).json({msg: "User does not exist."})
     
-            await Buyers.findOneAndUpdate({_id: req.user.id}, {
+            await Buyers.findOneAndUpdate({_id: req.buyer.id}, {
                 cart: req.body.cart
             })
     
@@ -113,15 +114,15 @@ const buyerController = {
             return res.status(500).json({msg: err.message})
         }
     },
-    history: async(req, res) =>{
-        try {
-            const history = await Payments.find({user_id: req.user.id})
+    // history: async(req, res) =>{
+    //     try {
+    //         const history = await Payments.find({user_id: req.buyer.id})
     
-            res.json(history)
-        } catch (err) {
-            return res.status(500).json({msg: err.message})
-        }
-    }
+    //         res.json(history)
+    //     } catch (err) {
+    //         return res.status(500).json({msg: err.message})
+    //     }
+    // }
 };
 
 const createAccessToken = (buyer) => {
