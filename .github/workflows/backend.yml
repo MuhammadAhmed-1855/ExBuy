@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: Build & Push Image
       run: |
-        echo "${{ secrets.DOCKERPW }}" | docker login -u "shahid0404" --password-stdin 
+        echo "${{ secrets.DOCKERPW }}" | docker login -u "muhammadahmed1855" --password-stdin 
         docker build -t backend .
         docker tag backend muhammadahmed1855/aws_exbuy_backend
         docker push muhammadahmed1855/aws_exbuy_backend
